@@ -102,12 +102,15 @@
 }
 
 
-/* Remove On Mobiles and Tablets */
-@media only screen and (max-width: 1024px) {
+/* optional
+Remove On Mobiles and Tablets To Avoid Content Overlap
+Note: This was made for desktop only. But I commented out this section
+so you can see it on mobiles for demonstrational purposes */
+/* @media only screen and (max-width: 1024px) {
   .hero-sidebar {
     display: none;
   }
-}
+} */
 
 
 
