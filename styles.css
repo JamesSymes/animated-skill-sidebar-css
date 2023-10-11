@@ -1,0 +1,119 @@
+/* Hero.css */
+.hero-sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0c1819;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-item {
+  font-weight: bold;
+  position: absolute;
+  opacity: 0;
+  animation: fadeIn 2.5s forwards;
+  color: #fff;
+}
+
+/* skill-1 */
+.skill-item-1 {
+  font-size: 28px;
+  top: 15%;
+  left: 40%;
+  animation: initialDelay 1s, fadeInOut 30s 12s infinite;
+}
+
+/* skill-2 */
+.skill-item-2 {
+  font-size: 40px;
+  top: 68%;
+  left: 70%;
+  animation: initialDelay 0s, fadeInOut 30s 17s infinite;
+}
+
+/* skill-3 */
+.skill-item-3 {
+  font-size: 45px;
+  top: 43%;
+  left: 70%;
+  animation: initialDelay 0s, fadeInOut 30s 2s infinite;
+}
+
+/* skill-4 */
+.skill-item-4 {
+  font-size: 35px;
+  top: 20%;
+  left: 60%;
+  animation: initialDelay 0s, fadeInOut 30s 7s infinite;
+}
+
+/* skill-5 */
+.skill-item-5 {
+  font-size: 28px;
+  top: 15%;
+  left: 80%;
+  animation: initialDelay 1s, fadeInOut 30s 22s infinite;
+}
+
+/* skill-6 */
+.skill-item-6 {
+  font-size: 36px;
+  top: 76%;
+  left:35%;
+  animation: initialDelay 1s, fadeInOut 30s 27s infinite;
+}
+
+/* skill-7 */
+.skill-item-7 {
+  font-size: 28px;
+  bottom: 20%;
+  left: 55%;
+  animation: initialDelay 1s, fadeInOut 30s 19s infinite;
+}
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.7); /* Start at 70% of the size */
+  }
+  45% { /* 10% of the animation duration is the fade in and out */
+    opacity: 1;
+    transform: scale(1); /* Grow to 100% of the size */
+  }
+  50% {
+    opacity: 0;
+    transform: scale(1); /* Maintain 100% of the size as it fades out */
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes initialDelay {
+  0%, 100% {
+    opacity: 0;
+  }
+}
+
+
+/* Remove On Mobiles and Tablets */
+@media only screen and (max-width: 1024px) {
+  .hero-sidebar {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
